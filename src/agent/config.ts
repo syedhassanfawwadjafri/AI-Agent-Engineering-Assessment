@@ -5,7 +5,7 @@
 
 export const AGENT_CONFIG = {
   ollamaBaseUrl: process.env.OLLAMA_BASE_URL || 'http://localhost:11434/v1',
-  ollamaModel: process.env.OLLAMA_MODEL || 'llama3.2:latest',
+  ollamaModel: process.env.OLLAMA_MODEL || 'qwen3:14b',
   apiBaseUrl: process.env.API_BASE_URL || 'http://localhost:3000',
   appName: 'store-admin',
 } as const;
