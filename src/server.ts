@@ -5,6 +5,7 @@ import ordersRouter from './routes/orders';
 import promotionsRouter from './routes/promotions';
 import { ApiError, sendError } from './utils/errors';
 import { enableDynamicMode } from './utils/storage';
+import agentRouter from './agent/route';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -201,6 +202,7 @@ app.use('/api', (req: Request, res: Response, next: NextFunction) => {
 app.use('/api/products', productsRouter);
 app.use('/api/orders', ordersRouter);
 app.use('/api/promotions', promotionsRouter);
+app.use('/api/agent', agentRouter);
 
 // 404 handler
 app.use((req: Request, res: Response) => {
