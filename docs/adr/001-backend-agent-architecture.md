@@ -62,7 +62,7 @@ Decisions are needed on agent topology, inter-agent communication protocol, LLM 
 
 **Selected: B — Medium-sized model, configurable**
 
-The model is set via the `OLLAMA_MODEL` environment variable (default: `llama3.2:latest`). This allows swapping to any Ollama-hosted model without code changes.
+The model is set via the `OLLAMA_MODEL` environment variable (default: `qwen3:14b`). This allows swapping to any Ollama-hosted model without code changes.
 
 
 
