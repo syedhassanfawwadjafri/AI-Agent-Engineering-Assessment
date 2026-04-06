@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Control Panel</title>
   <link rel="stylesheet" href="/admin/admin.css">
+  <link rel="stylesheet" href="/admin/chat.css">
 </head>
 <body>
   <div class="admin-header">
@@ -95,6 +96,35 @@
     </div>
   </div>
 
+  <!-- Chat Widget -->
+  <button id="chat-fab" class="chat-fab" title="Open AI Assistant">
+    <span class="icon-chat">💬</span>
+    <span class="icon-close">✕</span>
+  </button>
+
+  <div id="chat-panel" class="chat-panel">
+    <div class="chat-panel-header">
+      <div class="chat-panel-header-icon">🤖</div>
+      <div class="chat-panel-header-text">
+        <h3>Store Assistant</h3>
+        <p>Ask about orders or products</p>
+      </div>
+    </div>
+    <div id="chat-messages" class="chat-messages">
+      <div class="chat-msg assistant">Hi! I can help you manage orders and products. Try asking me to look up an order or update a product.</div>
+      <div id="chat-typing" class="chat-typing">
+        <span class="chat-typing-dot"></span>
+        <span class="chat-typing-dot"></span>
+        <span class="chat-typing-dot"></span>
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <textarea id="chat-input" class="chat-input" placeholder="Type a message..." rows="1"></textarea>
+      <button id="chat-send" class="chat-send-btn" title="Send">➤</button>
+    </div>
+  </div>
+
   <script src="/admin/admin.js"></script>
+  <script src="/admin/chat.js"></script>
 </body>
 </html>

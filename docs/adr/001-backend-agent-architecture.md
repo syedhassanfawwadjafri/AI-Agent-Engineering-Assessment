@@ -1,8 +1,6 @@
 # ADR-001: Backend Agent Architecture
 
 **Date:** 2026-04-06
-**Status:** Accepted
-**Deciders:** Engineering team
 
 ## Context
 
